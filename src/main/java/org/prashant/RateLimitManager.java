@@ -23,6 +23,10 @@ public class RateLimitManager {
 
     }
 
+    public RateLimiter getRateLimiter(String clientId) {
+        return clients.get(clientId);
+    }
+
     public String limit() {
 
         return "";
